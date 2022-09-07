@@ -1,0 +1,556 @@
+@import 'bootstrap-variables';
+
+/* ==============================================================
+Bootstrap tweaks
+===============================================================*/
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #212529;
+  background: #e4e5e6;
+  background-color: #fff;
+  min-height: 600px;
+}
+
+a {
+  color: #533f03;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #533f03;
+  /* make sure browsers use the pointer cursor for anchors, even with no href */
+  cursor: pointer;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #373a3c;
+}
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Main page styles
+========================================================================== */
+
+.hipster.img-fluid {
+  display: inline-block;
+  width: 347px;
+  height: 497px;
+  background: url('../images/jhipster_family_member_1.svg') no-repeat center top;
+  background-size: contain;
+}
+
+.hipster.img-fluid2 {
+  background: url('../images/home.png') no-repeat center top;
+  width: 1515px;
+  height: 600px;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.hipster.img-fluid3 {
+  display: inline-block;
+  width: 240px;
+  height: 300px;
+  background: url('../images/1-2_Inicio_de_Pagina_2.png') no-repeat center top;
+  background-size: contain;
+}
+
+.hipster.img-fluid4 {
+  display: inline-block;
+  width: 260px;
+  height: 290px;
+  background: url('../images/PF.png') no-repeat center top;
+  background-size: contain;
+  margin-left: 200px;
+}
+
+.hipster.img-fluid5 {
+  display: inline-block;
+  width: 260px;
+  height: 290px;
+  background: url('../images/PM.png') no-repeat center top;
+  background-size: contain;
+  margin-left: 200px;
+}
+
+.hipster.img-fluid6 {
+  display: inline-block;
+  width: 240px;
+  height: 200px;
+  background: url('../images/entrepreneur-g79a6c5c24_1920.jpg') no-repeat center top;
+  background-size: contain;
+  margin-left: 150px;
+}
+
+/* wait autoprefixer update to allow simple generation of high pixel density media query */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hipster {
+    background: url('../images/jhipster_family_member_1.svg') no-repeat center top;
+    background-size: contain;
+  }
+}
+
+/* ==========================================================================
+Generic styles
+========================================================================== */
+
+/* Error highlight on input fields */
+.valid[required],
+.valid.required {
+  border-left: 5px solid green;
+}
+
+.invalid:not(form) {
+  border-left: 5px solid red;
+}
+
+/* other generic styles */
+
+.jh-card {
+  padding: 1.5%;
+  border: none;
+  object-fit: contain;
+  /*margin-top: 10px;*/
+  margin-left: 205px;
+  width: 1295px;
+  height: 635px;
+  background: blue;
+  text-decoration: none;
+  top: 50px;
+}
+
+.jh-navbar {
+  width: 1514px;
+  height: 50px;
+  position: fixed;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ListaGeneral {
+  text-decoration: none;
+}
+
+aside {
+  float: left;
+  width: calc(15% - 20px);
+  background: #f8f9fa;
+  min-height: 635px;
+  padding: 10px;
+  font-size: 14px;
+  /*margin-top: 10px;*/
+  position: fixed;
+  top: 50px;
+}
+
+aside form ul li a {
+  text-decoration: none;
+}
+
+aside form ul li a:link {
+  text-decoration: none;
+}
+
+aside form ul {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app aside form ul li a {
+  text-decoration: none;
+}
+
+#SubMenuPF ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#SubMenuPF li {
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+#SubMenuPF li a {
+  padding: 2px 7px 2px 7px;
+  color: #666;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+
+/*Quitar si no queremos el fondo blanco*/
+.container-fluid {
+  /* background: white;*/
+  width: 500px;
+  height: 635px;
+}
+
+.error {
+  color: white;
+  background-color: red;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.break {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.readonly {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.hand,
+[jhisortby] {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  line-height: 2.5;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+blink {
+  text-decoration: none;
+  color: black;
+}
+
+link {
+  text-decoration: none;
+}
+
+#columna1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  margin-top: 91px;
+  margin-left: 20px;
+}
+#columna2 {
+  position: absolute;
+  top: 0px;
+  margin-top: 10px;
+  margin-left: 520px;
+  margin-right: 20px;
+  margin-top: 91px;
+}
+
+.caja1 {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+}
+
+.caja2 {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+  margin-top: 20px;
+}
+.caja3 {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+}
+.caja4 {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+  margin-top: 20px;
+}
+
+listaG {
+  list-style: none;
+}
+
+.ClienteGeneral {
+  background-color: white;
+  border: 0.5px solid black;
+}
+
+.ClienteGeneral label {
+  margin-left: 10px;
+  width: 140px;
+}
+
+.ClienteGeneralDatos {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.ClienteGeneralDatos input {
+  width: 450px;
+  margin-left: 10px;
+}
+
+#radiob {
+  width: 150px;
+}
+
+.ClienteGeneralDatos select {
+  width: 450px;
+  margin-left: 10px;
+}
+
+.ClienteGeneralDatos label {
+  width: 450px;
+  margin-left: 10px;
+}
+
+.CajaDocumentos {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.CajaDocumentos .left {
+  float: left;
+  width: 70%;
+}
+
+.CajaDocumentos .right {
+  float: right;
+  width: 30%;
+}
+input {
+  background-color: #efefef;
+  size: '50000';
+  width: 250px;
+  border: none;
+}
+
+progress {
+  width: 1248px;
+  height: 30px;
+}
+label {
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+select {
+  width: 250px;
+  background-color: #efefef;
+}
+
+option {
+  font-style: 200px;
+}
+
+.EncabezadoPJ {
+  background: #efefef;
+}
+
+.botones {
+  text-align: right;
+  margin-right: 70px;
+}
+
+button {
+  background: #2470dc;
+  width: 180px;
+  color: #fff;
+}
+
+/* ==========================================================================
+Custom alerts for notification
+========================================================================== */
+.alerts {
+  .alert {
+    text-overflow: ellipsis;
+    pre {
+      background: none;
+      border: none;
+      font: inherit;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+    }
+    .popover pre {
+      font-size: 10px;
+    }
+  }
+  .toast {
+    position: fixed;
+    width: 100%;
+    &.left {
+      left: 5px;
+    }
+    &.right {
+      right: 5px;
+    }
+    &.top {
+      top: 55px;
+    }
+    &.bottom {
+      bottom: 55px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .alerts .toast {
+    width: 50%;
+  }
+}
+
+/* ==========================================================================
+entity tables helpers
+========================================================================== */
+
+/* Remove Bootstrap padding from the element
+http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
+@mixin no-padding($side) {
+  @if $side == 'all' {
+    .no-padding {
+      padding: 0 !important;
+    }
+  } @else {
+    .no-padding-#{$side} {
+      padding-#{$side}: 0 !important;
+    }
+  }
+}
+@include no-padding('left');
+@include no-padding('right');
+@include no-padding('top');
+@include no-padding('bottom');
+@include no-padding('all');
+
+/* bootstrap 3 input-group 100% width
+http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
+.width-min {
+  width: 1% !important;
+}
+
+/* ==========================================================================
+entity detail page css
+========================================================================== */
+.row.jh-entity-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .row.jh-entity-details > {
+    dt {
+      float: left;
+      overflow: hidden;
+      clear: left;
+      text-align: right;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0.5em 0;
+    }
+    dd {
+      border-bottom: 1px solid #eee;
+      padding: 0.5em 0;
+      margin-left: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+ui bootstrap tweaks
+========================================================================== */
+.nav,
+.pagination,
+.carousel,
+.card-title a {
+  cursor: pointer;
+}
+
+.datetime-picker-dropdown > li.date-picker-menu div > table .btn-secondary,
+.uib-datepicker-popup > li > div.uib-datepicker > table .btn-secondary {
+  border: 0;
+}
+
+.datetime-picker-dropdown > li.date-picker-menu div > table:focus,
+.uib-datepicker-popup > li > div.uib-datepicker > table:focus {
+  outline: none;
+}
+
+.thread-dump-modal-lock {
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* jhipster-needle-scss-add-main JHipster will add new css style */
